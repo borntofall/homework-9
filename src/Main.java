@@ -39,12 +39,9 @@ public class Main {
         System.out.println("Task 4");
 
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        char meaning;
-        for (int index = 0; index < reverseFullName.length / 2; index++) {
-            meaning = reverseFullName[index];
-            reverseFullName[index] = reverseFullName[reverseFullName.length - 1 - index];
-            reverseFullName[reverseFullName.length - 1 - index] = meaning;
+        for (int index = reverseFullName.length - 1; index >= 0; index--) {
+            System.out.print(reverseFullName[index]);
         }
-        System.out.println(Arrays.toString(reverseFullName));
+
     }
 }
